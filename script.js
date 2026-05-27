@@ -8,11 +8,15 @@ for(let i=0;i<sqr.length;i++ )
         let ind=i;
        changeColor(ind)
 		})
-        sqr[i].addEventListener("mouseleave",()=>{
+
+	}
+
+for(let i=0;i<sqr.length;i++)
+	{
+		  sqr[i].addEventListener("mouseleave",()=>{
 			let idx=i;
 			changeColors(idx)
 		})
-
 	}
 
 function changeColor(ind) {
@@ -35,16 +39,13 @@ function changeColor(ind) {
 function changeColors(ind) {
 	for(let i=0;i<sqr.length;i++)
 		{
-			if(i==ind)
-			{
-				continue;
-			}
-			else
-			{
+
+			
+			
 				
-   sqr[i].style.backgroundColor="#E6E6FA"
+   sqr[i].style.backgroundColor="rgb(230,230,250)"
 		
-			}
+			
 		}
 }
 
