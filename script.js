@@ -8,9 +8,13 @@ for(let i=0;i<sqr.length;i++ )
         let ind=i;
        changeColor(ind)
 		})
-
+        sqr[i].addEventListener("mouseleave",()=>{
+			let idx=i;
+			changeColors(idx)
+		})
 
 	}
+
 function changeColor(ind) {
 	for(let i=0;i<sqr.length;i++)
 		{
@@ -20,10 +24,32 @@ function changeColor(ind) {
 			}
 			else
 			{
-				sqr[i].style.backgroundColor="#6F4E37"
+				
+   sqr[i].style.backgroundColor="rgb(111,78,55)"
+		
 			}
 		}
 }
+
+
+function changeColors(ind) {
+	for(let i=0;i<sqr.length;i++)
+		{
+			if(i==ind)
+			{
+				continue;
+			}
+			else
+			{
+				
+   sqr[i].style.backgroundColor="#E6E6FA"
+		
+			}
+		}
+}
+
+
+
 
 
 
