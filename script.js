@@ -4,7 +4,7 @@ let sqr=document.querySelectorAll(".square");
 
 for(let i=0;i<sqr.length;i++ )
 	{
-		sqr[i].addEventListener("mouseenter",()=>{
+		sqr[i].addEventListener("mouseover",()=>{
         let ind=i;
        changeColor(ind)
 		})
@@ -13,7 +13,7 @@ for(let i=0;i<sqr.length;i++ )
 
 for(let i=0;i<sqr.length;i++)
 	{
-		  sqr[i].addEventListener("mouseleave",()=>{
+		  sqr[i].addEventListener("mouseout",()=>{
 			let idx=i;
 			changeColors(idx)
 		})
